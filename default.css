@@ -60,7 +60,6 @@ ul {
 
 .greeting-wrapper {
     align-content: center;
-    border: 1px dashed lightcoral;
     display: grid;
     min-height: 10em;
     text-align: center;
@@ -69,6 +68,7 @@ ul {
 .intro-wrapper {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -83,18 +83,69 @@ ul {
 }
 
 .nav-wrapper {
+    align-items: center;
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: space-between;
     grid-area: nav-wrapper;
-    border: 1px dashed lightcoral;
+    
+}
+
+#navigation {
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dots-wrapper {
+    display: flex;
+    padding: 10px;
+}
+
+/* #dot-1, #dot-2, #dot-3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} */
+
+#dot-1 {
+    background-color: #FC6058;
+}
+
+#dot-2 {
+    background-color: #FEC02F;
+}
+
+#dot-3 {
+    background-color: #2ACA3E;
+}
+
+.browser-dot {
+    background-color: black;
+    border-radius: 50%;
+    height: 15px;
+    margin: 5px;
+    width: 15px;
+    
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
 }
 
 .left-column {
     grid-area: left-column;
-    border: 1px dashed lightcoral;
 }
 
 .right-column {
     grid-area: right-column;
-    border: 1px dashed lightcoral;
 }
 
 @media screen and (max-width: 1200px) {
