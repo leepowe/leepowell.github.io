@@ -14,8 +14,8 @@
 }
 
 html, body {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, strong  {
@@ -32,8 +32,8 @@ h5 {font-size: 20px;}
 h6 {font-size: 16px;}
 
 h5 {
-    text-align: center;
     line-height: 0;
+    text-align: center;
 }
 
 p, li, span, label, input, textarea {
@@ -42,8 +42,8 @@ p, li, span, label, input, textarea {
 }
 
 a {
-    text-decoration: none;
     color: #17a2b8;
+    text-decoration: none;
 }
 
 ul {
@@ -64,8 +64,8 @@ ul {
 }
 
 .main-container {
-    width: 1200px;
     margin: 0 auto;
+    width: 1200px;
 }
 
 .greeting-wrapper {
@@ -97,8 +97,8 @@ ul {
     border-bottom: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
     display: flex;
-    justify-content: space-between;
     grid-area: nav-wrapper;
+    justify-content: space-between;
     
 }
 
@@ -109,8 +109,7 @@ ul {
 
 #navigation li {
     display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
 }
 
 .dots-wrapper {
@@ -234,13 +233,13 @@ ul {
 }
 
 #corner-top-left {
-    top: -5px;
     left: -5px;
+    top: -5px;
 }
 
 #corner-top-right {
-    top: -5px;
     right: -5px;
+    top: -5px;
 }
 
 #corner-bottom-left {
@@ -255,7 +254,8 @@ ul {
 
 .about-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit minmax(320px, 1fr));
+    gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding: 50px 0;
 }
 
@@ -263,6 +263,16 @@ ul {
     background-color: var(--previewShadow);
     display: flex;
     justify-content: space-evenly;
+}
+
+.social-links {
+    align-content: center;
+    display: grid;
+    text-align: center;
+}
+
+#social_img {
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
