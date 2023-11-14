@@ -11,6 +11,8 @@
 
     --previewBg: rgba(251, 249, 243, 0.8);
     --previewShadow: #F0EAD6;
+
+    --buttonColor: black;
 }
 
 html, body {
@@ -283,7 +285,7 @@ ul {
 	padding-bottom: 50px;
 }
 
-#projects_title {
+#projects_title, #contact_title {
     text-align: center;
 }
 
@@ -314,6 +316,44 @@ ul {
 .post-intro{
 	color:#4b5156;
 	font-size: 14px;
+}
+
+#contact_form {
+    background-color: var(--mainColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 600px;
+    padding: 15px;
+}
+
+#submit_btn {
+    background-color: var(--buttonColor);
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#contact_form label {
+    line-height: 2.7em;
+}
+
+#contact_form textarea {
+    font-size: 14px;
+    min-height: 100px;
+}
+
+.input-field {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
