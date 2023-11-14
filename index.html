@@ -1,57 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="default.css" />
 
     <script src="script.js" defer></script>
     <title>New Lee Powell</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="style1">
-        <div class="main-container">
-            <div class="greeting-wrapper">
-                <h1>Hi, I'm Lee Powell</h1>
+      <div class="main-container">
+        <div class="greeting-wrapper">
+          <h1>Hi, I'm Lee Powell</h1>
+        </div>
+        <div class="intro-wrapper">
+          <div class="nav-wrapper">
+            <div class="dots-wrapper">
+              <div id="dot-1" class="browser-dot"></div>
+              <div id="dot-2" class="browser-dot"></div>
+              <div id="dot-3" class="browser-dot"></div>
             </div>
-            <div class="intro-wrapper">
-                <div class="nav-wrapper">
-                    <div class="dots-wrapper">
-                        <div id="dot-1" class="browser-dot"></div>
-                        <div id="dot-2" class="browser-dot"></div>
-                        <div id="dot-3" class="browser-dot"></div>
-                    </div>
-                    <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="left-column">
-                    <img id="profile_pic" src="images\Lee_Powell_pic.jpg" alt="Lee_Powell_picture">
-                    <h5>Personalize Theme</h5>
+            <ul id="navigation">
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="left-column">
+            <img
+              id="profile_pic"
+              src="assets\images\Lee_Powell_pic.jpg"
+              alt="Lee_Powell_picture"
+            />
+            <h5>Personalize Theme</h5>
 
-                    <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
-                    </div>
+            <div id="theme-options-wrapper">
+              <div id="light-mode" class="theme-dot"></div>
+              <div id="blue-mode" class="theme-dot"></div>
+              <div id="green-mode" class="theme-dot"></div>
+              <div id="purple-mode" class="theme-dot"></div>
+            </div>
 
-                    <p id="settings-note">*Theme settings will be saved <br />for your next visit.</p>
+            <p id="settings-note">
+              *Theme settings will be saved <br />for your next visit.
+            </p>
+          </div>
+          <div class="right-column">
+            <div id="preview-shadow">
+              <div id="preview">
+                <div id="corner-top-left" class="corner"></div>
+                <div id="corner-top-right" class="corner"></div>
+                <h3>What I Do</h3>
+                <p>
+                  I am an analytically driven software developer with a high
+                  attention to detail with an afinity for problem solving.
+                </p>
+                <div id="corner-bottom-left" class="corner"></div>
+                <div id="corner-bottom-right" class="corner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="style2">
+      <div class="main-container">
+        <div class="about-wrapper">
+          <div class="about-me">
+            <h4>More about me</h4>
+            <p>
+              I enjoy developing programs to help automate repitition and
+              simplify life.
+            </p>
+            <p>
+              I am a continuous improvement advocate and I'm always looking for
+              a way to streamline my work and maintain a higher quality.
+            </p>
+            <hr />
+            <h4>Resume</h4>
+
+            <p>
+              Fullstack developer:
+              <a
+                target="_blank"
+                href="assets\documents\Lee Powell Resume 11-13-2023.pdf"
+                >Download Resume</a
+              >
+            </p>
+
+            <div id="skills">
+              <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>HTML5/CSS</li>
+                <li>Spring</li>
+                <li>Node.js</li>
+              </ul>
+              <ul>
+                <li>API</li>
+                <li>MVC</li>
+                <li>Scrum</li>
+                <li>TDD</li>
+                <li>Agile</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <img id="social_img" src="assets\images\githubhome.PNG" />
+            <h3>Find me on LinkedIn and GitHub</h3>
+            <a href="https://www.linkedin.com/in/leempowell" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://github.com/LeePowe" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="style1">
+      <h3 id="projects_title">Some of my past projects</h3>
+
+        <div class="main-container">
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="assets/images/MacGyver Foods.png" />
+                        <div class="post-preview">
+                            <h6 class="post-title">MacGyver Foods Web App</h6>
+                            <p class="post-intro">
+                            A web app that uses a stored database of foods the user has on-hand and noting food allergens makes calls to an API to see what meals could be made.
+                            </p>
+                            <a href="#" target="_blank">Read More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="right-column">
-                    <div id="preview-shadow">
-                        <div id="preview">
-                            <div id="corner-top-left" class="corner"></div>
-                            <div id="corner-top-right" class="corner"></div>
-                            <h3>What I Do</h3>
-                            <p>I am an analytically driven software developer with a high attention to detail with an afinity for problem solving.</p>
-                            <div id="corner-bottom-left" class="corner"></div>
-                            <div id="corner-bottom-right" class="corner"></div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="assets/images/PetsAmok.jpg" />
+                        <div class="post-preview">
+                            <h6 class="post-title">Virtual Pets Amok</h6>
+                            <p class="post-intro">This is a Java based version of the virtual pets from the 80's but they are all there and they are running amok. These pets run from carbon based to carbon neutral.</p>
+                            <a href="#" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="assets/images/Guessing Game.jpg" />
+                        <div class="post-preview">
+                            <h6 class="post-title">Guessing Game</h6>
+                            <p class="post-intro">This simple program is more about the making of as apposed to what was made.  But really this is a placeholder.</p>
+                            <a href="#" target="_blank">Read More</ a>
                         </div>
                     </div>
                 </div>
@@ -59,56 +168,7 @@
         </div>
     </section>
     <section class="style2">
-        <div class="main-container">
-            <div class="about-wrapper">
-                <div class="about-me">
-                    <h4>More about me</h4>
-                    <p>I enjoy developing programs to  help automate repitition and simplify life.
-                    </p> 
-                    <p>I am a continuous improvement advocate and I'm always looking for a way to streamline my work and maintain a higher quality.
-                    </p>
-                    <hr>
-                    <h4>Resume</h4>
-
-                    <p>Fullstack developer:
-                         <a target="_blank" href="assets\documents\Lee Powell Resume 11-13-2023.pdf">Download Resume</a>
-                    </p>
-                    <div id="skills">
-                        <ul>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>HTML5/CSS</li>
-                            <li>Spring</li>
-                            <li>Node.js</li>
-                        </ul>
-                        <ul>
-                            <li>API</li>
-                            <li>MVC</li>
-                            <li>Scrum</li>
-                            <li>TDD</li>
-                            <li>Agile</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <img id="social_img" src="images\githubhome.PNG">
-                    <h3>Find me on LinkedIn and GitHub</h3>
-
-                    <a href="https://www.linkedin.com/in/leempowell" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/LeePowe" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
+      <div class="main-container">Contact</div>
     </section>
-    <section class="style1">
-        <div class="main-container">
-            Portfolio
-        </div>
-    </section>
-    <section class="style2">
-        <div class="main-container">
-            Contact
-        </div>
-    </section>
-</body>
+  </body>
 </html>
