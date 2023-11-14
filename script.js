@@ -1,33 +1,34 @@
-const themeDots = document.getElementsByClassName('theme-dot');
-const theme = localStorage.getItem('theme');
+const themeDots = document.querySelectorAll('.theme-dot');
+const theme = localStorage.getItem('theme') || 'light';
 
-if (theme == null) {
-    setTheme('light');
-} else {
-    setTheme(theme);
+setTheme(theme);
+
+for (const themeDot of themeDots) {
+    themeDot.addEventListener('click', ()=> {
+        const mode = themeDot.dataset.mode;
+        setTheme(mode);
+    });
 }
 
-for (var i = 0; themeDots.length > i; i++){
-    themeDots[i].addEventListener('click', function() {
-        let mode = this.dataset.mode;
-        console.log('Option clicked:', mode);
-        setTheme(mode);
-    })
+function getStylesheetUrl(mode) {
+    return `css/${mode}.css`;
 }
 
 function setTheme(mode) {
-    if (mode == 'light') {
-        document.getElementById('theme-style').href = 'css/default.css';
-    }
-    if (mode == 'blue') {
-        document.getElementById('theme-style').href = 'css/blue.css';
-    }
-    if (mode == 'green') {
-        document.getElementById('theme-style').href = 'css/green.css';
-    }
-    if (mode == 'purple') {
-        document.getElementById('theme-style').href = 'css/purple.css';
-    }
+    let themeStyle = document.getElementById('theme-style'),
+        defaultTheme = getStylesheetUrl('light');
 
+    switch (mode) {
+        case 'light':
+        case 'blue':
+        case 'green':
+        case 'purple':
+            themeStyle.href = getStylesheetUrl(mode);
+            break;
+        default:
+            themeStyle.href = defaultTheme;
+            mode = 'light';
+            break;
+    }
     localStorage.setItem('theme', mode);
 }
