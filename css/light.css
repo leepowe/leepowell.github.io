@@ -316,13 +316,26 @@ ul {
 }
 
 .post-title{
-	color:black;
+    color:black;
 	margin: 0;
 }
 
 .post-intro{
-	color:#4b5156;
+    color:#4b5156;
 	font-size: 14px;
+}
+
+.post-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.try-link {
+    justify-self: start;
+}
+
+.repo-link {
+    justify-self: end;
 }
 
 #contact_form {
